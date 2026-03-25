@@ -37,7 +37,7 @@ A) Direkt auf main (für kleine, schnelle Änderungen okay)
 B) Über einen neuen Branch (Best Practice)
 1. Neuer Branch: git checkout -b update-text-datei
 2. Stage & Commit: ```bash
-git add hello.txt
+git add anleitung.txt
 git commit -m "Zweites Update an der Textdatei"
 
 3. Push: git push -u origin update-text-datei
