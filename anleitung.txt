@@ -1,0 +1,43 @@
+git clone https://github.com/...git
+
+cd testrepo01
+
+1. Neuen Branch erstellen
+git checkout -b branche1
+
+2. Eine Änderung machen
+touch anleitung.txt
+
+3. Status prüfen
+git status
+
+4. Stage & Commit (Lokal speichern)
+git add anleitung.txt
+git commit -m "Erste Datei im neuen Branch hinzugefügt"
+
+5. Push (Zu GitHub hochladen)
+git push -u origin branche1
+
+----------
+
+6. Wechseln zu Main-Branch
+git checkout main
+
+7. Neuster Stand holen
+git pull origin main
+
+
+8. Neues Update pushen
+A) Direkt auf main (für kleine, schnelle Änderungen okay)
+- Stage: git add anleitung.txt
+- Commit: git commit -m "Update an der Textdatei"
+- Push: git push origin main
+
+
+B) Über einen neuen Branch (Best Practice)
+1. Neuer Branch: git checkout -b update-text-datei
+2. Stage & Commit: ```bash
+git add hello.txt
+git commit -m "Zweites Update an der Textdatei"
+
+3. Push: git push -u origin update-text-datei
